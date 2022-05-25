@@ -11,10 +11,10 @@
     ("android" folder in the project, by default provides "debug.keystore" and its configuration 
     at "build.gradle" under "android/app" folder)
 
-    a) Create "local.properties" file under "android" folder and add following parameter
+    1)  Create "local.properties" file under "android" folder and add following parameter
         > sdk.dir=<ANDROID_SDK_ROOT>
 
-    b) Create "assets" folder under "android/app/src/main/" and execute following command from
+    2)  Create "assets" folder under "android/app/src/main/" and execute following command from
         Terminal (Project LOcation) :
         > react-native bundle --platform android --dev false --entry-file index.js --bundle-output 
         > android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
@@ -25,3 +25,11 @@
     > ./gradlew assembleDebug
 
 
+## Ubuntu OS : Metro Bundler Network/Firewall Issues - Fix:
+
+1) Allow the Port 19000 or 19001 to access over the Network
+    > sudo ufw allow 19000/tcp
+    > sudo ufw allow 19001/tcp
+
+2) To see the STatus of Allowed Ports - Use the following Commands 
+    > sudo ufw status verbose
