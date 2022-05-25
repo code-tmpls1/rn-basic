@@ -15,10 +15,10 @@
         > sdk.dir=<ANDROID_SDK_ROOT>
 
     2)  Create "assets" folder under "android/app/src/main/" and execute following command from
-        Terminal (Project LOcation) :
+        Terminal (Project Location) :
         > react-native bundle --platform android --dev false --entry-file index.js --bundle-output 
         > android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
-        (This creates "index.android.bundle" file under "assets" folder)
+    (This creates "index.android.bundle" file under "assets" folder)
 
 4) Generate APK FIle
     > cd android
@@ -31,5 +31,20 @@
     > sudo ufw allow 19000/tcp
     > sudo ufw allow 19001/tcp
 
-2) To see the STatus of Allowed Ports - Use the following Commands 
+2) To see the Status of Allowed Ports - Use the following Commands 
     > sudo ufw status verbose
+
+## Project Structure:
+
+1) **assets:** It is used to store images, vectors, fonts, etc.
+2) **src:** Application's Main Code Container
+    1) **components:** The Folder that stores common Components that are used in the App.
+    2) **constants:** It contains the Constants
+    3) **routes:** It contains Navigators
+    4) **redux:** It contains reducers and store
+    5) **views:** It contains all your Application Screens / Features
+    6) **helper:** Common Api Controller
+    7) **utils:** It contains Reusable Utility Logics
+3) **App.js:** Main Components that starts the Application
+4) **index.js:** Entry point of the Application.
+5) Modify the environment variable files in root folder **(.env)**
