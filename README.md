@@ -62,7 +62,7 @@
         > import android.os.Bundle;\
         > @Override\
         > protected void onCreate(Bundle savedInstanceState) {\
-        > super.onCreate(null);
+        > super.onCreate(null);\
         > }
     3) Wrapping your app in NavigationContainer
         > import * as React from 'react';\
