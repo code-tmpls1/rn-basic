@@ -69,9 +69,9 @@
         > import { NavigationContainer } from '@react-navigation/native';\
         > export default function App() {\
         > return (\
-        > &gt;NavigationContainer&lt;\
+        > &lt;NavigationContainer&gt;\
         > {/* Rest of your app code */}\
-        > </NavigationContainer>\
+        > &lt;/NavigationContainer&gt;\
         > );\
         > }
     
