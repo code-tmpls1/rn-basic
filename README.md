@@ -59,7 +59,7 @@
         > npx pod-install ios
 
     2) Edit "MainActivity.java" as follows:
-        > import android.os.Bundle;
+        > import android.os.Bundle;\
         > @Override
         > protected void onCreate(Bundle savedInstanceState) {
         > super.onCreate(null);
