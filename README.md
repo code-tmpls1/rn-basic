@@ -54,22 +54,22 @@
 1) **React Navigation:** 
 
     1) Install following Dependencies:
-        > npm install @react-navigation/native
-        > npm install react-native-screens react-native-safe-area-context
+        > npm install @react-navigation/native\
+        > npm install react-native-screens react-native-safe-area-context\
         > npx pod-install ios
 
     2) Edit "MainActivity.java" as follows:
         > import android.os.Bundle;\
-        > @Override
-        > protected void onCreate(Bundle savedInstanceState) {
+        > @Override\
+        > protected void onCreate(Bundle savedInstanceState) {\
         > super.onCreate(null);
         > }
     3) Wrapping your app in NavigationContainer
-        > import * as React from 'react';
-        > import { NavigationContainer } from '@react-navigation/native';
-        > export default function App() {
-        > return (
-        > <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
-        > );
+        > import * as React from 'react';\
+        > import { NavigationContainer } from '@react-navigation/native';\
+        > export default function App() {\
+        > return (\
+        > <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>\
+        > );\
         > }
     
