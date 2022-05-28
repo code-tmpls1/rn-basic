@@ -35,6 +35,20 @@
 2) To see the Status of Allowed Ports - Use the following Commands 
     > sudo ufw status verbose
 
+## Ubuntu : Errors
+1) **Error: ENOSPC: System limit for number of file watchers reached :**
+**Solution:**
+    1) Execute following Command:
+        > sudo gedit /etc/sysctl.conf
+
+    2) Add a line at the bottom
+        > fs.inotify.max_user_watches=524288
+
+    3) Then save and exit!
+
+    4) To check it, Execute following Command:
+        > sudo sysctl -p
+
 ## Project Structure:
 
 1) **assets:** It is used to store images, vectors, fonts, etc.
@@ -46,6 +60,7 @@
     5) **views:** It contains all your Application Screens / Features
     6) **helper:** Common Api Controller
     7) **utils:** It contains Reusable Utility Logics
+    8) **styles:** It contains Global StyleSheets
 3) **App.js:** Main Components that starts the Application
 4) **index.js:** Entry point of the Application.
 5) Modify the environment variable files in root folder **(.env)**
@@ -56,6 +71,7 @@
     1) Install following Dependencies:
         > npm install @react-navigation/native\
         > npm install react-native-screens react-native-safe-area-context\
+        > npm install @react-navigation/bottom-tabs
         > npx pod-install ios
 
     2) Edit "MainActivity.java" as follows:
