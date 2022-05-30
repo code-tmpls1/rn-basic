@@ -1,5 +1,4 @@
 import React,{ useState } from "react";
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AppColorTemplate from './../../../styles/ColorConfig';
@@ -18,7 +17,6 @@ const TabNavigation = ({ tabMenu }) => {
   };
   
   return (
-      <NavigationContainer>
         <Tab.Navigator 
         screenListeners={() => ({
           state: (e) => {
@@ -26,11 +24,12 @@ const TabNavigation = ({ tabMenu }) => {
           },
         })}
         screenOptions={({ route }) => ({
+          headerShown: false,
           tabBarIcon: ({ color, size }) => {
             return <TabIconProvider routeName={route.name} size={size} color={color} />
           },
-          tabBarInactiveTintColor: AppColorTemplate.GLOBAL_TMPL_COLOR2,
-          tabBarActiveTintColor: AppColorTemplate.GLOBAL_TMPL_COLOR1,
+          tabBarInactiveTintColor: AppColorTemplate.GLOBAL_TMPL_COLOR2_MED,
+          tabBarActiveTintColor: AppColorTemplate.GLOBAL_TMPL_COLOR1_MAX,
         })}>
           {tabMenu.map((tab)=>{
             let tabScreenOptions = {
@@ -51,7 +50,6 @@ const TabNavigation = ({ tabMenu }) => {
                 options={tabScreenOptions}/>);
             })}
           </Tab.Navigator>
-        </NavigationContainer>
       );
 }
 

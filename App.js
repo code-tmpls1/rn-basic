@@ -1,17 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 import TabNavigation from './src/components/Navigation/Tab/TabNavigation';
-import HomeScreen from './src/views/HomeScreen';
+import DrawerNavigation from './src/components/Navigation/Drawer/DrawerNavigation';
+import WelcomeScreen from './src/views/WelcomeScreen';
 import SettingsScreen from './src/views/SettingsScreen';
+import AppColorTemplate from './src/styles/ColorConfig';
 
 export default function App() {
   return (
-    <TabNavigation tabMenu={[{ name:'Tab1', icon:'account', badge:3, component: HomeScreen },
-                            { name:'Tab2', icon:'bell', component:SettingsScreen },
+    <NavigationContainer>
+    <TabNavigation tabMenu={[{ name:'Tab1', icon:'account', badge:3, component: DrawerNavigation },
+                            { name:'Tab2', icon:'bell', component:WelcomeScreen },
                             { name:'Tab3', icon:'account', component:SettingsScreen },
-                            { name:'Tab4', icon:'bell', component:SettingsScreen },
+                            { name:'Tab4', icon:'bell', component:WelcomeScreen },
                             { name:'Tab5', icon:'account', component:SettingsScreen }]} />
+    </NavigationContainer>
   );
 }
 

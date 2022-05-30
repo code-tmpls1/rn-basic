@@ -25,6 +25,7 @@
     > cd android
     > ./gradlew assembleDebug
 
+{For Every Build - Execute (3.2) and (4) Steps}
 
 ## Ubuntu OS : Metro Bundler Network/Firewall Issues - Fix:
 
@@ -48,6 +49,21 @@
 
     4) To check it, Execute following Command:
         > sudo sysctl -p
+        
+2) **Error: Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?**
+    1) Add **plugins: ['react-native-reanimated/plugin']** in the **babel.config.js**
+        > module.exports = function(api) {
+        >   api.cache(true);
+        >   return {
+        >       presets: ['babel-preset-expo'],
+        >       plugins: ['react-native-reanimated/plugin']
+        >   };
+        > };
+    2) And Reset the Cache using following Command:
+        > npx react-native start --reset-cache 
+3) **Error: Invariant Violation: requireNativeComponent: "RNGestureHandlerRootView" was not found in the UIManager.**
+    1) To resolve this issue, install using following Command:
+        > expo install react-native-gesture-handler
 
 ## Project Structure:
 
@@ -72,6 +88,8 @@
         > npm install @react-navigation/native\
         > npm install react-native-screens react-native-safe-area-context\
         > npm install @react-navigation/bottom-tabs
+        > npm install @react-navigation/drawer
+        > npm install @react-navigation/stack
         > npx pod-install ios
 
     2) Edit "MainActivity.java" as follows:
@@ -90,4 +108,7 @@
         > &lt;/NavigationContainer&gt;\
         > );\
         > }
-    
+2) **React Native Paper:**
+    > npm install react-native-paper
+3) **React Native Responsive Grid System:**
+    > npm i react-native-responsive-grid-system
