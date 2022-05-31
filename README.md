@@ -23,6 +23,7 @@
 
 4) Generate APK FIle
     > cd android
+    > ./gradlew clean
     > ./gradlew assembleDebug
 
 {For Every Build - Execute (3.2) and (4) Steps}

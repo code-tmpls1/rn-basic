@@ -13,3 +13,18 @@
         > import com.swmansion.gesturehandler.RNGestureHandlerPackage;\
         *to*
         > import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;\
+
+2) **Error: > Task :react-native-gradle-plugin:compileKotlin**
+    **'compileJava' task (current target is 1.8) and 'compileKotlin' task (current target is 11) jvm target compatibility should be set to the same Java version.**
+    In **build.gradle** file, add following code -
+    > android {\
+    >   compileOptions {\
+    >       sourceCompatibility JavaVersion.VERSION_11\
+    >       targetCompatibility JavaVersion.VERSION_11\
+    >   }\
+    >   ...
+    > }
+
+3) **Configure project :app**
+    **Unable to detect AGP versions for included builds. All projects in the build should use the same AGP version. Class name for the included build object: org.gradle.composite.internal.DefaultIncludedBuild$IncludedBuildImpl_Decorated.**
+    
