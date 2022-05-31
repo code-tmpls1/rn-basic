@@ -6,6 +6,7 @@ import DrawerNavigation from './src/components/Navigation/Drawer/DrawerNavigatio
 import WelcomeScreen from './src/views/WelcomeScreen';
 import SettingsScreen from './src/views/SettingsScreen';
 import AppColorTemplate from './src/styles/ColorConfig';
+import { Scanner } from './src/components/Scanner/Scanner';
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
     <TabNavigation tabMenu={[{ name:'Tab1', icon:'account', badge:3, component: DrawerNavigation },
                             { name:'Tab2', icon:'bell', component:WelcomeScreen },
                             { name:'Tab3', icon:'account', component:SettingsScreen },
-                            { name:'Tab4', icon:'bell', component:WelcomeScreen },
+                            { name:'Tab4', icon:'bell', component:Scanner },
                             { name:'Tab5', icon:'account', component:SettingsScreen }]} />
     </NavigationContainer>
   );

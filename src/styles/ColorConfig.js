@@ -11,7 +11,7 @@ const AppColorTemplate = {
     GLOBAL_TMPL_COLOR1_MIN: '#a833c6', // Color Purple - Light
     
     GLOBAL_TMPL_COLOR2_MAX:'#bbb',
-    GLOBAL_TMPL_COLOR2_MED: '#eee',
+    GLOBAL_TMPL_COLOR2_MED: '#ddd',
     GLOBAL_TMPL_COLOR2_MIN: '#fff',
 };
 
