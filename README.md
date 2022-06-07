@@ -16,8 +16,7 @@
 
     2)  Create "assets" folder under "android/app/src/main/" and execute following command from
         Terminal (Project Location) :
-        > react-native bundle --platform android --dev false --entry-file index.js --bundle-output 
-        > android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+        > react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
 
         (This creates "index.android.bundle" file under "assets" folder)
 

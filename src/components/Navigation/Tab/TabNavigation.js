@@ -6,7 +6,7 @@ import TabNavigationStyles from './TabNavigationStyles';
 
 const Tab = createBottomTabNavigator();
 
-const TabNavigation = ({ tabMenu }) => {
+const TabNavigation = ({ tabMenu, headerShown }) => {
 
   const [ tabBadgeActive, setTabBadgeActive ] = useState("");
 
@@ -24,7 +24,7 @@ const TabNavigation = ({ tabMenu }) => {
           },
         })}
         screenOptions={({ route }) => ({
-          headerShown: false,
+          headerShown: headerShown,
           tabBarIcon: ({ color, size }) => {
             return <TabIconProvider routeName={route.name} size={size} color={color} />
           },
@@ -46,7 +46,8 @@ const TabNavigation = ({ tabMenu }) => {
               <Tab.Screen 
                 key={tab.name}
                 name={tab.name} 
-                component={tab.component} 
+                component={tab.component}
+                initialParams={{}}
                 options={tabScreenOptions}/>);
             })}
           </Tab.Navigator>

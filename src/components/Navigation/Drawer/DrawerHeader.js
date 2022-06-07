@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, TouchableOpacity } from 'react-native';
+import { View, Image, TouchableOpacity, Vibration } from 'react-native';
 import { Row, Col } from 'react-native-responsive-grid-system';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AppColorTemplate from './../../../styles/ColorConfig';
 import { Searchbar } from 'react-native-paper';
 import DrawerStyles from './DrawerStyles';
+import { NavigationContext } from '@react-navigation/native';
+
 
 const DrawerHeader = (props) => {
+
+    const navigation = React.useContext(NavigationContext);
+
     const [ isSearchView, setIsSearchView ] = useState(false);
 
     const SearchSubmit = () => {
@@ -43,7 +49,15 @@ const DrawerHeader = (props) => {
               <Image style={{ width:width,height:height }} source={{uri:logo}} />
             </View>
           </Col>
-          <Col xs={2} sm={2} md={2} lg={2}>
+          <Col xs={1} sm={2} md={2} lg={2}>
+            <View style={DrawerStyles.searchIconView}>
+            <TouchableOpacity onPress={()=>{ setIsSearchView(!isSearchView); }} >
+              <MaterialCommunityIcons name="qrcode-scan" style={DrawerStyles.headerIcons} size={20} 
+              onPress={()=>{ Vibration.vibrate(2000);navigation.push('Scanner') }}/>
+            </TouchableOpacity>
+            </View>
+          </Col>
+          <Col xs={1} sm={2} md={2} lg={2}>
             <View style={DrawerStyles.searchIconView}>
             <TouchableOpacity onPress={()=>{ setIsSearchView(!isSearchView); }} >
               <MaterialIcons name="search" style={DrawerStyles.headerIcons} size={26} />

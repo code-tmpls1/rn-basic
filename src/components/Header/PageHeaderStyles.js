@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import AppColorTemplate from './../../../styles/ColorConfig';
+import AppColorTemplate from '../../styles/ColorConfig';
 
 const PageHeaderStyles = StyleSheet.create({
  headerView:{ backgroundColor:'#fff', padding:3 },
