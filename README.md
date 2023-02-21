@@ -1,8 +1,9 @@
 # rn-basic
 
 ## Setups involved in setting up the Project
-1) Set Global React Native CLI with the following command
+1) Set Global React Native and Expo CLI with the following command
     > npm install -g --force react-native-cli
+    > npm i expo-cli
 
 2) For Development Purpose - Use following Command
     > expo start
