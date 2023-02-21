@@ -66,6 +66,13 @@
     1) To resolve this issue, install using following Command:
         > expo install react-native-gesture-handler
 
+## Windows Errors
+1) **Error: expo : File C:\Users\<Username>\AppData\Roaming\npm\expo.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see 
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170:**
+**Solution:**
+    1) To Resolve this Execute following Command:
+        > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
 ## Project Structure:
 
 1) **assets:** It is used to store images, vectors, fonts, etc.
