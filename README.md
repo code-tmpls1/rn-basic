@@ -1,9 +1,8 @@
 # rn-basic
 
 ## Setups involved in setting up the Project
-1) Set Global React Native and Expo CLI with the following command
-    > npm install -g --force react-native-cli\
-    > npm install -g --force expo-cli 
+1) Set Global React Native CLI with the following command
+    > npm install -g --force react-native-cli
 
 2) For Development Purpose - Use following Command
     > expo start
@@ -21,8 +20,8 @@
 
         (This creates "index.android.bundle" file under "assets" folder)
 
-4) Generate APK FIle (Same command for Windows and Ubuntu)
-    > cd android\
+4) Generate APK FIle
+    > cd android
     > ./gradlew clean
     > ./gradlew assembleDebug
 
@@ -40,7 +39,6 @@
 ## Ubuntu : Errors
 1) **Error: ENOSPC: System limit for number of file watchers reached :**
 **Solution:**
-
     1) Execute following Command:
         > sudo gedit /etc/sysctl.conf
 
@@ -53,7 +51,6 @@
         > sudo sysctl -p
         
 2) **Error: Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?**
-
     1) Add **plugins: ['react-native-reanimated/plugin']** in the **babel.config.js**
         > module.exports = function(api) {
         >   api.cache(true);
@@ -62,22 +59,11 @@
         >       plugins: ['react-native-reanimated/plugin']
         >   };
         > };
-        > 
     2) And Reset the Cache using following Command:
         > npx react-native start --reset-cache 
-        > 
 3) **Error: Invariant Violation: requireNativeComponent: "RNGestureHandlerRootView" was not found in the UIManager.**
-4) 
     1) To resolve this issue, install using following Command:
         > expo install react-native-gesture-handler
-
-## Windows Errors
-1) **Error: expo : File C:\Users\<Username>\AppData\Roaming\npm\expo.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see 
-about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170:**
-**Solution:**
-
-    1) To Resolve this Execute following Command:
-        > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 ## Project Structure:
 
