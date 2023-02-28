@@ -1,0 +1,357 @@
+PS C:\git-projects\rn-basic> cd project
+PS C:\git-projects\rn-basic\project> react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+(node:9648) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+                    Welcome to Metro!
+              Fast - Scalable - Integrated
+
+
+info Writing bundle output to:, android/app/src/main/assets/index.android.bundle
+info Done writing bundle output
+info Copying 16 asset files
+info Done copying assets
+PS C:\git-projects\rn-basic\project> cd android
+PS C:\git-projects\rn-basic\project\android> ./gradlew clean
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :react-native-gradle-plugin:compileKotlin
+'compileJava' task (current target is 1.8) and 'compileKotlin' task (current target is 11) jvm target compatibility should be set to the same Java version.       
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (10, 37): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (119, 30): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (135, 26): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (155, 32): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (161, 31): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactExtension.kt: (169, 36): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\ReactPlugin.kt: (100, 48): 'reactRoot: DirectoryProperty' is deprecated. reactRoot was confusing and has been replace with rootto point to your root project and reactNativeDir to point to the folder of the react-native NPM package
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (10, 37): 'ApplicationVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (11, 37): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (12, 37): 'LibraryVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (28, 51): 'BaseVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (131, 12): 'ApplicationVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (132, 12): 'LibraryVariant' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\kotlin\com\facebook\react\TaskConfiguration.kt: (252, 14): 'BaseVariant' is deprecated. Deprecated in Java
+
+> Task :react-native-gradle-plugin:compileJava
+Note: C:\git-projects\rn-basic\project\node_modules\react-native-gradle-plugin\src\main\java\com\facebook\react\codegen\generator\SchemaJsonParser.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Configure project :app
+Unable to detect AGP versions for included builds. All projects in the build should use the same AGP version. Class name for the included build object: org.gradle.composite.internal.DefaultIncludedBuild$IncludedBuildImpl_Decorated.
+
+> Configure project :expo
+
+Using expo modules
+  - expo-application (4.1.0)
+  - expo-barcode-scanner (11.3.0)
+  - expo-constants (13.1.1)
+  - expo-error-recovery (3.1.0)
+  - expo-file-system (14.0.0)
+  - expo-font (10.1.0)
+  - expo-image-loader (3.2.0)
+  - expo-keep-awake (10.1.1)
+  - expo-modules-core (0.9.2)
+  - expo-splash-screen (0.15.1)
+
+
+> Configure project :react-native-reanimated
+AAR for react-native-reanimated has been found
+C:\git-projects\rn-basic\project\node_modules\react-native-reanimated\android\react-native-reanimated-68-jsc.aar
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.3.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 27s
+22 actionable tasks: 6 executed, 16 up-to-date
+PS C:\git-projects\rn-basic\project\android> ./gradlew assembleDebug
+
+> Configure project :app
+Unable to detect AGP versions for included builds. All projects in the build should use the same AGP version. Class name for the included build object: org.gradle.composite.internal.DefaultIncludedBuild$IncludedBuildImpl_Decorated.
+
+> Configure project :expo
+
+Using expo modules
+  - expo-application (4.1.0)
+  - expo-barcode-scanner (11.3.0)
+  - expo-constants (13.1.1)
+  - expo-error-recovery (3.1.0)
+  - expo-file-system (14.0.0)
+  - expo-font (10.1.0)
+  - expo-image-loader (3.2.0)
+  - expo-keep-awake (10.1.1)
+  - expo-modules-core (0.9.2)
+  - expo-splash-screen (0.15.1)
+
+
+> Configure project :react-native-reanimated
+AAR for react-native-reanimated has been found
+C:\git-projects\rn-basic\project\node_modules\react-native-reanimated\android\react-native-reanimated-68-jsc.aar
+
+> Task :expo-constants:createDebugExpoConfig
+Execution optimizations have been disabled for task ':expo-constants:createDebugExpoConfig' to ensure correctness due to the following reasons:
+  - Gradle detected a problem with the following location: 'C:\git-projects\rn-basic\project\android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:compileDebugShaders' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.3.3/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: 'C:\git-projects\rn-basic\project\android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:generateDebugBuildConfig' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.3.3/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: 'C:\git-projects\rn-basic\project\android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:javaPreCompileDebug' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.3.3/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: 'C:\git-projects\rn-basic\project\android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:mergeDebugShaders' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on 
+what order the tasks are executed. Please refer to https://docs.gradle.org/7.3.3/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+
+> Task :expo-file-system:processDebugManifest
+C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\AndroidManifest.xml:8:9-10:20 Warning:
+        provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+
+> Task :app:processDebugMainManifest
+C:\git-projects\rn-basic\project\android\app\src\debug\AndroidManifest.xml:23:9-32:20 Warning:
+        provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:23 to replace other declarations but no other declaration present
+
+> Task :expo-modules-core:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-modules-core\android\src\main\java\expo\modules\kotlin\defaultmodules\ErrorManagerModule.kt: (12, 5): 'name(String): Unit' is deprecated. The 'name' component was renamed to 'Name'.
+w: C:\git-projects\rn-basic\project\node_modules\expo-modules-core\android\src\main\java\expo\modules\kotlin\events\KModuleEventEmitterWrapper.kt: (9, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-modules-core\android\src\main\java\expo\modules\kotlin\events\KModuleEventEmitterWrapper.kt: (94, 7): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-modules-core\android\src\main\java\expo\modules\kotlin\events\KModuleEventEmitterWrapper.kt: (98, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-modules-core\android\src\main\java\expo\modules\kotlin\events\KModuleEventEmitterWrapper.kt: (99, 23): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+
+> Task :expo-modules-core:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-gesture-handler:compileDebugKotlin
+w: Runtime JAR files in the classpath should have the same version. These files were found in the classpath:
+    C:/Users/admin/.gradle/caches/transforms-3/a8a0d3a06f1aafe725f31c0a807e02e6/transformed/jetified-kotlin-stdlib-jdk8-1.4.10.jar (version 1.4)
+    C:/Users/admin/.gradle/caches/transforms-3/1f456e2c1e41f404b4dfeee65c2d1cc5/transformed/jetified-kotlin-stdlib-jdk7-1.4.10.jar (version 1.4)
+    C:/Users/admin/.gradle/caches/transforms-3/4f03069290e17741c12ad421e9eb410b/transformed/jetified-kotlin-stdlib-1.5.20.jar (version 1.5)
+    C:/Users/admin/.gradle/caches/transforms-3/a09fc900079bc2055720bc76e8592fa9/transformed/jetified-kotlin-stdlib-common-1.5.20.jar (version 1.5)
+w: Some runtime JAR files in the classpath have an incompatible version. Consider removing them from the classpath
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\lib\src\main\java\com\swmansion\gesturehandler\FlingGestureHandler.kt: (30, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\lib\src\main\java\com\swmansion\gesturehandler\GestureHandler.kt: (707, 11): Name shadowed: size
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\lib\src\main\java\com\swmansion\gesturehandler\LongPressGestureHandler.kt: (44, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\lib\src\main\java\com\swmansion\gesturehandler\TapGestureHandler.kt: (73, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\lib\src\main\java\com\swmansion\gesturehandler\TapGestureHandler.kt: (82, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerEvent.kt: (7, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerEvent.kt: (17, 11): 'init(Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerEvent.kt: (33, 42): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerEvent.kt: (34, 21): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (439, 30): 'RNGestureHandlerEnabledRootView' is deprecated. Use <GestureHandlerRootView /> component instead. Check gesture handler installation instructions in documentation for more information.
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (449, 11): 'onCatalystInstanceDestroy(): Unit' is deprecated. Overrides deprecated member in 'com.facebook.react.bridge.NativeModule'. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (454, 33): 'resolveRootTagFromReactTag(Int): Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (479, 19): 'RNGestureHandlerEnabledRootView' is deprecated. Use <GestureHandlerRootView /> component instead. Check gesture handler installation instructions in documentation for more information.
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (505, 33): 'resolveRootTagFromReactTag(Int): Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerModule.kt: (520, 67): Parameter 'motionEvent' is never used
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerRootHelper.kt: (75, 18): 'onChildStartedNativeGesture(MotionEvent!): Unit' is deprecated. Deprecated in Java       
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerRootHelper.kt: (80, 42): Parameter 'disallowIntercept' is never used
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerRootHelper.kt: (112, 28): Parameter 'viewTag' is never used
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerRootView.kt: (54, 23): 'RNGestureHandlerEnabledRootView' is deprecated. Use <GestureHandlerRootView /> component instead. Check gesture handler installation instructions in documentation for more information.
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerStateChangeEvent.kt: (7, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerStateChangeEvent.kt: (18, 11): 'init(Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerStateChangeEvent.kt: (35, 42): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerStateChangeEvent.kt: (36, 21): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java  
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerTouchEvent.kt: (7, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerTouchEvent.kt: (14, 11): 'init(Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerTouchEvent.kt: (30, 42): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-gesture-handler\android\src\main\java\com\swmansion\gesturehandler\react\RNGestureHandlerTouchEvent.kt: (31, 21): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java        
+
+> Task :react-native-safe-area-context:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\react-native-safe-area-context\android\src\main\java\com\th3rdwave\safeareacontext\SafeAreaView.kt: (50, 23): 'getter for uiImplementation: UIImplementation!' is deprecated. Deprecated in Java
+
+> Task :expo-application:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-application\android\src\main\java\expo\modules\application\ApplicationModule.kt: (129, 14): 'versionCode: Int' is deprecated. Deprecated in Java
+
+> Task :expo-barcode-scanner:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerView.kt: (129, 73): 'getter for defaultDisplay: Display!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (5, 25): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (6, 25): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (6, 32): 'PreviewCallback' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (27, 51): 'PreviewCallback' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (42, 23): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (106, 37): 'getter for parameters: Camera.Parameters!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (108, 48): 'getter for supportedFocusModes: (Mutable)List<String!>!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (109, 57): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (109, 64): 'Parameters' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (109, 75): 'FOCUS_MODE_CONTINUOUS_PICTURE: String' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (110, 33): 'setter for focusMode: String!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (110, 45): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (110, 52): 'Parameters' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (110, 63): 'FOCUS_MODE_CONTINUOUS_PICTURE: String' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (116, 35): 'getter for supportedPictureSizes: (Mutable)List<Camera.Size!>!' is deprecated. Deprecated in Java        
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (120, 32): 'setPictureSize(Int, Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (120, 66): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (120, 92): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (121, 11): 'setter for parameters: Camera.Parameters!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (122, 11): 'setPreviewTexture(SurfaceTexture!): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (123, 11): 'startPreview(): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (125, 11): 'setPreviewCallback(Camera.PreviewCallback!): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (145, 11): 'stopPreview(): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (147, 11): 'setPreviewCallback(Camera.PreviewCallback!): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (169, 61): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (180, 39): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (195, 29): 'getter for parameters: Camera.Parameters!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (195, 40): 'getter for previewSize: Camera.Size!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (196, 28): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\BarCodeScannerViewFinder.kt: (197, 29): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (3, 25): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (4, 25): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (4, 32): 'CameraInfo' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (17, 12): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (17, 19): 'getNumberOfCameras(): Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (18, 18): 'constructor CameraInfo()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (18, 18): 'CameraInfo' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (19, 7): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (19, 14): 'getCameraInfo(Int, Camera.CameraInfo!): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (20, 16): 'facing: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (20, 26): 'CameraInfo' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (20, 37): 'CAMERA_FACING_FRONT: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (24, 23): 'facing: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (24, 33): 'CameraInfo' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (24, 44): 'CAMERA_FACING_BACK: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (32, 23): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (37, 41): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (41, 20): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (41, 27): 'open(Int): Camera!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (54, 7): 'release(): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (67, 40): 'Camera' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (67, 47): 'Size' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (69, 20): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (69, 44): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (71, 30): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (71, 42): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (72, 28): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (72, 41): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (100, 30): 'facing: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (100, 40): 'CameraInfo' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (100, 51): 'CAMERA_FACING_FRONT: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (101, 40): 'orientation: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (104, 40): 'orientation: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (106, 7): 'setDisplayOrientation(Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (107, 33): 'getter for parameters: Camera.Parameters!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (108, 27): 'setRotation(Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (112, 64): 'getter for supportedPreviewSizes: (Mutable)List<Camera.Size!>!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (113, 38): 'width: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (114, 39): 'height: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (115, 27): 'setPreviewSize(Int, Int): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (117, 9): 'setter for parameters: Camera.Parameters!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-barcode-scanner\android\src\main\java\expo\modules\barcodescanner\ExpoBarCodeScanner.kt: (130, 51): 'CameraInfo' is deprecated. Deprecated in Java
+
+> Task :expo-constants:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-constants\android\src\main\java\expo\modules\constants\ConstantsService.kt: (132, 17): 'versionCode: Int' is deprecated. Deprecated in Java
+
+> Task :expo-file-system:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (8, 19): 'AsyncTask<Params : Any!, Progress : Any!, Result : Any!>' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (428, 27): Type mismatch: inferred type is String? but String was expected
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (472, 29): Type mismatch: inferred type is String? but String was expected
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (561, 43): Parameter 'options' is never used
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (649, 46): Parameter 'options' is never used
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (773, 43): Unchecked cast: Any? to Map<String, Any>?
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (790, 40): 'create(MediaType?, File): RequestBody' is deprecated. Moved to extension function. Put the 'file' argument first to fix Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (795, 15): Unchecked cast: Any to Map<String, Any>
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (927, 49): Unchecked cast: Any? to Map<String, Any>?
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1028, 43): Unchecked cast: Any? to Map<String, Any>?
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1040, 9): 'execute(vararg FileSystemModule.DownloadResumableTaskParams?): AsyncTask<FileSystemModule.DownloadResumableTaskParams?, Void?, Void?>!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1101, 47): 'AsyncTask<Params : Any!, Progress : Any!, Result : Any!>' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1101, 47): 'constructor AsyncTask<Params : Any!, Progress : Any!, Result : Any!>()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1114, 21): Variable 'count' initializer is redundant
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1248, 39): 'toLowerCase(Locale): String' is deprecated. Use lowercase() instead.
+w: C:\git-projects\rn-basic\project\node_modules\expo-file-system\android\src\main\java\expo\modules\filesystem\FileSystemModule.kt: (1285, 35): Type mismatch: inferred type is String? but String was expected
+
+> Task :expo-font:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-font\android\src\main\java\expo\modules\font\FontLoaderModule.kt: (55, 38): Type mismatch: inferred type is String? but String was expected
+
+> Task :expo-image-loader:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-image-loader\android\src\main\java\expo\modules\imageloader\ImageLoaderModule.kt: (6, 19): 'AsyncTask<Params : Any!, Progress : Any!, Result : Any!>' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-image-loader\android\src\main\java\expo\modules\imageloader\ImageLoaderModule.kt: (11, 42): 'SimpleTarget<Z : Any!>' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-image-loader\android\src\main\java\expo\modules\imageloader\ImageLoaderModule.kt: (63, 7): 'AsyncTask<Params : Any!, Progress : Any!, Result : Any!>' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-image-loader\android\src\main\java\expo\modules\imageloader\ImageLoaderModule.kt: (63, 17): 'THREAD_POOL_EXECUTOR: Executor!' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-image-loader\android\src\main\java\expo\modules\imageloader\ImageLoaderModule.kt: (88, 22): 'SimpleTarget<Z : Any!>' is deprecated. Deprecated in Java
+
+> Task :expo-splash-screen:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\SplashScreenReactActivityLifecycleListener.kt: (17, 50): Parameter 'activityContext' is never used
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\SplashScreenReactActivityLifecycleListener.kt: (35, 66): 'toLowerCase(): String' is deprecated. Use lowercase() instead.
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\SplashScreenViewController.kt: (20, 25): 'constructor Handler()' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\SplashScreenViewController.kt: (41, 5): Parameter 'failureCallback' is never used
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\singletons\SplashScreenStatusBar.kt: (23, 27): 'replaceSystemWindowInsets(Int, Int, Int, Int): WindowInsets' is deprecated. Deprecated in Java        
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\singletons\SplashScreenStatusBar.kt: (24, 29): 'getter for systemWindowInsetLeft: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\singletons\SplashScreenStatusBar.kt: (26, 29): 'getter for systemWindowInsetRight: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\expo-splash-screen\android\src\main\java\expo\modules\splashscreen\singletons\SplashScreenStatusBar.kt: (27, 29): 'getter for systemWindowInsetBottom: Int' is deprecated. Deprecated in Java
+
+> Task :react-native-screens:compileDebugKotlin
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\Screen.kt: (82, 22): 'constructor GuardedRunnable(ReactContext!)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackFragment.kt: (64, 28): 'setter for targetElevation: Float' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackFragment.kt: (120, 28): 'setter for targetElevation: Float' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackHeaderConfig.kt: (21, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackHeaderConfig.kt: (69, 47): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackHeaderConfig.kt: (70, 15): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackHeaderConfig.kt: (89, 34): 'getter for systemWindowInsetTop: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenStackHeaderConfig.kt: (238, 29): 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (65, 22): 'constructor GuardedRunnable(ReactContext!)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (92, 53): 'getter for systemUiVisibility: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (94, 49): 'SYSTEM_UI_FLAG_LIGHT_STATUS_BAR: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (96, 50): 'SYSTEM_UI_FLAG_LIGHT_STATUS_BAR: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (98, 23): 'setter for systemUiVisibility: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (113, 22): 'constructor GuardedRunnable(ReactContext!)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (122, 43): 'replaceSystemWindowInsets(Int, Int, Int, Int): WindowInsets' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (123, 47): 'getter for systemWindowInsetLeft: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (125, 47): 'getter for systemWindowInsetRight: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (126, 47): 'getter for systemWindowInsetBottom: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (145, 69): 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (146, 71): 'FLAG_FORCE_NOT_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (148, 69): 'FLAG_FORCE_NOT_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\ScreenWindowTraits.kt: (149, 71): 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\SearchBarView.kt: (9, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\SearchBarView.kt: (122, 47): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\SearchBarView.kt: (123, 15): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\HeaderBackButtonClickedEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\HeaderBackButtonClickedEvent.kt: (7, 51): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\HeaderBackButtonClickedEvent.kt: (17, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\HeaderBackButtonClickedEvent.kt: (18, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenAppearEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenAppearEvent.kt: (7, 40): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenAppearEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenAppearEvent.kt: (14, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDisappearEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDisappearEvent.kt: (7, 43): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDisappearEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDisappearEvent.kt: (14, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDismissedEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDismissedEvent.kt: (7, 43): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDismissedEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenDismissedEvent.kt: (17, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenTransitionProgressEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenTransitionProgressEvent.kt: (13, 5): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenTransitionProgressEvent.kt: (22, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenTransitionProgressEvent.kt: (27, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillAppearEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillAppearEvent.kt: (7, 44): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillAppearEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillAppearEvent.kt: (14, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillDisappearEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillDisappearEvent.kt: (7, 47): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillDisappearEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\ScreenWillDisappearEvent.kt: (14, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\StackFinishTransitioningEvent.kt: (5, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\StackFinishTransitioningEvent.kt: (7, 52): 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\StackFinishTransitioningEvent.kt: (13, 44): 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\main\java\com\swmansion\rnscreens\events\StackFinishTransitioningEvent.kt: (14, 25): 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\paper\java\com\swmansion\rnscreens\FabricEnabledViewGroup.kt: (13, 40): Parameter 'width' is never used
+w: C:\git-projects\rn-basic\project\node_modules\react-native-screens\android\src\paper\java\com\swmansion\rnscreens\FabricEnabledViewGroup.kt: (13, 52): Parameter 'height' is never used
+
+> Task :app:compileDebugJavaWithJavac
+Note: C:\git-projects\rn-basic\project\android\app\src\debug\java\com\projecttest\ReactNativeFlipper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libbutter.so, libc++_shared.so, libevent-2.1.so, libevent_core-2.1.so, libevent_extra-2.1.so, libfabricjni.so, libfb.so, libfbjni.so, libflipper.so, libfolly_futures.so, libfolly_json.so, libgifimage.so, libglog.so, libglog_init.so, libimagepipeline.so, libjsc.so, libjscexecutor.so, libjsi.so, libjsijniprofiler.so, libjsinspector.so, liblogger.so, libmapbufferjni.so, libnative-filters.so, libnative-imagetranscoder.so, libreact_codegen_rncore.so, libreact_config.so, libreact_debug.so, libreact_nativemodule_core.so, libreact_render_animations.so, libreact_render_attributedstring.so, libreact_render_componentregistry.so, libreact_render_core.so, libreact_render_debug.so, libreact_render_graphics.so, libreact_render_imagemanager.so, libreact_render_leakchecker.so, libreact_render_mapbuffer.so, libreact_render_mounting.so, libreact_render_runtimescheduler.so, libreact_render_scheduler.so, libreact_render_telemetry.so, libreact_render_templateprocessor.so, libreact_render_textlayoutmanager.so, libreact_render_uimanager.so, libreact_utils.so, libreactnativeblob.so, libreactnativejni.so, libreactnativeutilsjni.so, libreactperfloggerjni.so, libreanimated.so, librrc_image.so, librrc_root.so, librrc_text.so, librrc_unimplementedview.so, librrc_view.so, libruntimeexecutor.so, libstatic-webp.so, libturbomodulejsijni.so, libyoga.so.
+w: Detected multiple Kotlin daemon sessions at build\kotlin\sessions
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.3.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+Execution optimizations have been disabled for 1 invalid unit(s) of work during this build to ensure correctness.
+Please consult deprecation warnings for more details.
+
+BUILD SUCCESSFUL in 5m 35s
+459 actionable tasks: 395 executed, 64 up-to-date
